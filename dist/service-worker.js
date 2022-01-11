@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.c5c861783164c783b85e16cc1de3e82a.js"
+  "/precache-manifest.92e853bb9fae84d64b98e1a0a2face05.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "mineros-36233"});
