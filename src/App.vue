@@ -29,19 +29,10 @@ export default {
   color: #2c3e50;
 }
 
-
-
 #nav a {
   font-weight: bold;
   color: #2c3e50;
 }
-
-
-
-.view{
-    width:1100px;
-    margin: auto;
-  }
 
 #nav a.router-link-exact-active {
  
@@ -84,31 +75,19 @@ thead{
 }
 
 
-.main-view{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 
 @media screen and  (max-width: 600px) {
  
- .over-table{
-   width:500px;
-   margin: auto;
- }
-.view{
-    width:100%;
+  .over-table{
+    width:600px;
     margin: auto;
+  }
+  #app{
+    width:500px;
   }
 
 }
-/* 
-@media screen and  (max-width: 500px) {
-  .main-view{
-   flex-direction: row;
-  }
-} */
+
 
 
 </style>

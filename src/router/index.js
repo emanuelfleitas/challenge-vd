@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
 import CharactersTable from '../views/Characters/CharactersTable.vue'
 import FeaturesCharacter from '../views/Characters/FeaturesCharacter.vue'
 const routes = [
@@ -31,11 +30,8 @@ const routes = [
     name:'FeaturesCharacter',
     component: FeaturesCharacter,
     props:true
-  },
-  {
-    path: '/about',
-    component: About,
   }
+  
   
 ]
 

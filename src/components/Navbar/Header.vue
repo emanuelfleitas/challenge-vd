@@ -1,7 +1,8 @@
 <template>
   <div class="header">
     <div class="btn-img">
-      <img src="@/assets/logo_rick_and_morty.png" alt="logo"><router-link  to="/">Vida Digital R&M</router-link>
+      <img src="@/assets/logo_rick_and_morty.png" alt="logo">
+      <router-link  to="/">Vida Digital R&M</router-link>
     </div>
   </div>
 </template>
@@ -16,15 +17,16 @@ export default {
 
 .header{
   background-color:#63b3ed ;
+}
+.btn-img{
+
   border-bottom: 1px solid rgb(172, 169, 169);
   text-align: initial; 
-  padding:10px;
+  padding:20px;
   font-size:20px;
   font-weight: bold;
   color: #fff;
-}
-.btn-img{
-  padding: 20px;
+
 }
 img{
   width:20px;
@@ -47,9 +49,15 @@ a{
 }
 
 @media screen and  (max-width: 600px) {
+ 
   .header{
-    width: 100%;
+    width:600px;
   }
+  .btn-img{
+      text-align: center; 
+  }
+
 }
 
-</style>
+
+</style> 

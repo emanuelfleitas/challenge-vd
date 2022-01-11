@@ -1,7 +1,7 @@
 <template>
 
   <div class="h1">
-    <h1>Features Characters</h1>
+    <h1>Features Character</h1>
   </div>
   <div class="box">
    
@@ -193,6 +193,7 @@ p{
     text-align: center;
     width: 50%;
   }
+  
 }
 
 
