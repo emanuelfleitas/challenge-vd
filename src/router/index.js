@@ -7,18 +7,6 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    /* children: [
-      {
-        path: '/CharactersTable',
-        name:'CharactersTable',
-        component: CharactersTable,
-      },
-      {
-        path: '/CharactersTable/:id',
-        name:'FeaturesCharacter',
-        component: FeaturesCharacter,
-      },
-    ] */
   },
   {
     path: '/CharactersTable',

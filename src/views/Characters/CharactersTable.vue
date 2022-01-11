@@ -1,10 +1,11 @@
 <template>
   <div class="over-table">
-      <table class="centrar" style="text-align:center;">
+      <table class="centrar" >
         <thead>
           <tr>
             <th>
-              <button class="btn-orden" @click="ordenar()">Name</button>
+              <button v-show="showArrow==true" class="btn-orden" @click="ordenar()"><i class="fas fa-arrow-up"></i>Name</button>
+              <button v-show="showArrow==false" class="btn-orden" @click="ordenar()"><i class="fas fa-arrow-down"></i>Name</button>
             </th> 
             <th>Status</th>
             <th>Species</th>
@@ -23,7 +24,6 @@
         </tbody> 
       </table>
   </div>
- 
 </template>
 
 <script>
@@ -31,13 +31,15 @@ import store from '@/store/index.js'
 import axios from 'axios'
 import {useRouter} from 'vue-router'
 
+
 export default {
   name: 'CharactersTable',
   data() {
     return{
       palabra:"",
       characters:[],
-      url: store.state.url
+      url: store.state.url,
+      showArrow: false
     }
   },
   mounted() {
@@ -50,6 +52,7 @@ export default {
   },
   methods:{
     ordenar(){
+      this.showArrow = !this.showArrow
       console.log(this.characters);
       this.characters.reverse()
     },
@@ -67,9 +70,9 @@ export default {
         }
         return lista
     }
-
   },
   setup(){
+
     const router = useRouter()
     const seeFeatures = (char) => {
       console.log(char); 
@@ -86,7 +89,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-
 .btn-style{
   padding:10px 20px ;
   background-color:#FBFCFC ;
@@ -101,7 +103,6 @@ export default {
   cursor: pointer;
 }
 
-
 .btn-orden{
   cursor: pointer;
   text-decoration: underline;
@@ -111,7 +112,6 @@ export default {
   font-size:1.0rem;
   background-color:rgb(220, 234, 243);
 }
-
 
 input{
   border: none;
@@ -124,14 +124,7 @@ input:focus{
     outline: none;
     border: none;
 }
-
 input:active{
     border: none;
 }
-
-
-
-
-
-
 </style>

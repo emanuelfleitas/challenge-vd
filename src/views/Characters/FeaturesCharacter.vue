@@ -1,14 +1,11 @@
 <template>
-
   <div class="h1">
     <h1>Features Character</h1>
   </div>
   <div class="box">
-   
     <div class="box-features">
       <img :src="feature.image" alt="img">
     </div>
-  
     <div class="box-features">
       <div class="tam">
         <div class="uno">Name:</div>
@@ -36,11 +33,9 @@
       </div>
     </div>
   </div>
-  
 
-         
 <div class="over-table">
-  <table class="centrar" style="text-align:center;">
+  <table class="centrar" >
     <thead>
       <tr>
         <th>Name</th>
@@ -74,7 +69,6 @@ export default {
             episodes:{},
             episode:[],
             origin:[],
-            /* id:this.$route.params.id, */
             url: store.state.url,
         }
     },
@@ -86,8 +80,6 @@ export default {
             console.log(datos);
             this.origin = datos.origin
             this.feature = datos
-
- 
             let resultados = response.data.episode
             resultados.forEach((element) =>{
               axios
@@ -110,40 +102,33 @@ export default {
 </script>
 
 <style scoped>
-
-
-
 .tam{
   padding:5px;
   width:300px;
-/*   border: 1px solid red; */
   display:flex;
   justify-content:space-between;
   line-height:20px;
 }
 .tam:hover{
-  border: 1px solid rgb(199, 196, 196);
-  background-color:#f8f8f8;
-
+ /*  border: 1px solid rgb(199, 196, 196); */
+  /* background-color:#f8f8f8; */
+  box-shadow: -1px 1px 8px;
 }
-
 .uno{
   font-weight:bold;
   padding:10px;
 }
-
 .dos{
   padding:10px;
 }
-
 
 .box{
   width:600px;
   margin: auto;
   display:flex;
-  /* justify-content: center; */
   flex-direction: row;
   text-align:center;
+  box-shadow: -2px 6px 10px;
 }
 
 .h1{
@@ -154,22 +139,12 @@ export default {
   flex-direction: row;
 }
 
-
-.box:hover{
-  transition: 1s box-shadow ;
-  box-shadow: 10px 8px 5px;
-}
-
-
-
 .box-features{
-  /* border: 1px solid red;  */
   box-sizing: border-box;
   flex: 40%;
  
 }
 .centrar{
-  /* border: 1px solid grey; */
   margin:20px auto;
   width:800px;
 }

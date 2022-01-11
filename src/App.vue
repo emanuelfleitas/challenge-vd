@@ -35,7 +35,6 @@ export default {
 }
 
 #nav a.router-link-exact-active {
- 
   color:#fff;
   font-size:1.25rem;
   font-weight: 600px;
@@ -56,8 +55,9 @@ tr{
 }
 
 tr:hover{
-  background-color:#EEEEEE;
+  background-color:#dcf2f8;
 }
+
 
 th{
   padding:30px 10px;
@@ -74,10 +74,7 @@ thead{
   box-shadow: -2px 2px 8px;
 }
 
-
-
 @media screen and  (max-width: 600px) {
- 
   .over-table{
     width:600px;
     margin: auto;
@@ -85,7 +82,6 @@ thead{
   #app{
     width:500px;
   }
-
 }
 
 
