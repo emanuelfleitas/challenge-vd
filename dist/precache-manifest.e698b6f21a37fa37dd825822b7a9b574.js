@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b49d56c8c57bfa0b0af2",
-    "url": "/css/app.8bdff7d0.css"
+    "revision": "c76770d6223e448beb2e",
+    "url": "/css/app.07a4725b.css"
   },
   {
     "revision": "622fdce856c0e5c9115a9bfd6ea517b5",
     "url": "/img/logo_rick_and_morty.622fdce8.png"
   },
   {
-    "revision": "0acdd00f37988d975dd755cfb6bfe2e9",
+    "revision": "79579996a1f109be7c7c3ffbd20f166e",
     "url": "/index.html"
   },
   {
-    "revision": "b49d56c8c57bfa0b0af2",
-    "url": "/js/app.d5efaf2f.js"
+    "revision": "c76770d6223e448beb2e",
+    "url": "/js/app.00d63c80.js"
   },
   {
-    "revision": "cc52d4323a5796440a65",
-    "url": "/js/chunk-vendors.6b99efa9.js"
+    "revision": "d07c9c44fab622dac6ee",
+    "url": "/js/chunk-vendors.8eb15f01.js"
   },
   {
     "revision": "61682cedf350be255e6b1517e9b5738f",
